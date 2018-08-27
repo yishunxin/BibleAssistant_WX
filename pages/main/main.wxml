@@ -1,0 +1,14 @@
+<!--pages/main/main.wxml-->
+<view class='main'>
+  <view class='header'>
+    你今天读经了吗？
+  </view>
+  <view class='body'>
+    <image src='/static/img/icon.png'></image>
+    <button>现在打卡</button>
+    <view class='down'>
+      <label>今日打卡</label>
+      <label>共0章</label>
+    </view>
+  </view>
+</view>

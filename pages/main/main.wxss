@@ -1,0 +1,4 @@
+/* pages/main/main.wxss */
+.down{
+  border-top: solid,gray
+}

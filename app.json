@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/group/group",
+    "pages/rank/rank"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "iconPath": "static/img/punch.png",
+        "selectedIconPath": "static/img/punch.png",
+        "pagePath": "pages/main/main",
+        "text": "打卡"
+      },
+      {
+        "iconPath": "static/img/group.png",
+        "selectedIconPath": "static/img/group.png",
+        "pagePath": "pages/group/group",
+        "text": "小组"
+      },
+      {
+        "iconPath": "static/img/rank.png",
+        "selectedIconPath": "static/img/rank.png",
+        "pagePath": "pages/rank/rank",
+        "text": "排行榜"
+      }
+    ]
+  }
+}
