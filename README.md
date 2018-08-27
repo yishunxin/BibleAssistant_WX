@@ -1,1 +1,0 @@
-# BibleAssistant_WX
