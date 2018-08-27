@@ -1,4 +1,5 @@
 // components/biblecata.js
+const staticData = require('../data/staticData.js')
 Component({
   /**
    * 组件的属性列表
@@ -11,7 +12,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-
   },
 
   /**

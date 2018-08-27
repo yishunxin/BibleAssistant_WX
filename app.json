@@ -2,7 +2,8 @@
   "pages": [
     "pages/main/main",
     "pages/group/group",
-    "pages/rank/rank"
+    "pages/rank/rank",
+    "pages/biblecata/biblecata"
   ],
   "window": {
     "backgroundTextStyle": "light",

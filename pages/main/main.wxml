@@ -5,7 +5,7 @@
   </view>
   <view class='body'>
     <image src='/static/img/icon.png'></image>
-    <button>现在打卡</button>
+    <navigator url="/pages/biblecata/biblecata">现在打卡</navigator>
     <view class='down'>
       <label>今日打卡</label>
       <label>共0章</label>

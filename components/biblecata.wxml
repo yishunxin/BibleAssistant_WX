@@ -1,3 +1,6 @@
 <!--components/biblecata.wxml-->
 <view>
+<view wx:for="{{staticData.old_bible_cata}}">
+  {{index}}: {{item.message}}
+</view>
 </view>

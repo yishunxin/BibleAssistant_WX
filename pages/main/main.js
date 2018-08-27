@@ -6,7 +6,6 @@ Page({
    */
   data: {
     today_punchs:[],
-    
   },
 
   /**

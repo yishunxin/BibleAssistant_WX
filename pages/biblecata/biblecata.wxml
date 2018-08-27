@@ -1,0 +1,32 @@
+<!--pages/biblecata/biblecata.wxml-->
+<!--导航条-->
+<view class="navbar">
+  <text data-idx="1" class="item {{currentTab==1 ? 'active' : ''}}" bindtap="navbarTap">卷</text>
+  <text data-idx="2" class="item {{currentTab==2 ? 'active' : ''}}" bindtap="navbarTap">节</text>
+</view>
+<!--卷-->
+<view hidden="{{currentTab!=1}}">
+  <text>旧约</text>
+  <view class='cata_container'>
+    <view wx:for="{{old_bible_cata}}" class='cata_item' bindtap="changecata" data-item="{{item}}">
+      <label class='shortname'>{{item.shortname}}</label>
+      <label class='fullname'>{{item.fullname}}</label>
+    </view>
+  </view>
+  <text>新约</text>
+  <view class='cata_container'>
+    <view wx:for="{{new_bible_cata}}" class='cata_item' bindtap="changecata" data-item="{{item}}">
+      <label class='shortname'>{{item.shortname}}</label>
+      <label class='fullname'>{{item.fullname}}</label>
+    </view>
+  </view>
+</view>
+<!--节-->
+<view hidden="{{currentTab!=2}}">
+  <view class='cata_container'>
+    <view wx:for="{{chapterlist}}" class='cata_item'>
+      <label class='shortname'>{{item}}</label>
+    </view>
+  </view>
+</view>
+<button>打卡</button>
