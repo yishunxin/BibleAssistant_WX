@@ -1,2 +1,336 @@
-module.exports = {old_bible_cata:[{ "chapter": 50, "fullname": "创世记", "shortname": "创" }, { "chapter": 40, "fullname": "出埃及记", "shortname": "出" }, { "chapter": 27, "fullname": "利未记", "shortname": "利" }, { "chapter": 36, "fullname": "民数记", "shortname": "民" }, { "chapter": 34, "fullname": "申命记", "shortname": "申" }, { "chapter": 24, "fullname": "约书亚记", "shortname": "书" }, { "chapter": 21, "fullname": "士师记", "shortname": "士" }, { "chapter": 4, "fullname": "路得记", "shortname": "得" }, { "chapter": 31, "fullname": "撒母耳记上", "shortname": "撒上" }, { "chapter": 24, "fullname": "撒母耳记下", "shortname": "撒下" }, { "chapter": 22, "fullname": "列王纪上", "shortname": "王上" }, { "chapter": 25, "fullname": "列王记下", "shortname": "王下" }, { "chapter": 29, "fullname": "历代志上", "shortname": "代上" }, { "chapter": 36, "fullname": "历代志下", "shortname": "代下" }, { "chapter": 10, "fullname": "以斯拉记", "shortname": "拉" }, { "chapter": 13, "fullname": "尼希米记", "shortname": "尼" }, { "chapter": 10, "fullname": "以斯帖记", "shortname": "斯" }, { "chapter": 42, "fullname": "约伯记", "shortname": "伯" }, { "chapter": 150, "fullname": "诗篇", "shortname": "诗" }, { "chapter": 31, "fullname": "箴言", "shortname": "箴" }, { "chapter": 12, "fullname": "传道书", "shortname": "传" }, { "chapter": 8, "fullname": "雅歌", "shortname": "歌" }, { "chapter": 66, "fullname": "以赛亚书", "shortname": "赛" }, { "chapter": 52, "fullname": "耶利米书", "shortname": "耶" }, { "chapter": 5, "fullname": "耶利米哀歌", "shortname": "哀" }, { "chapter": 48, "fullname": "以西结书", "shortname": "结" }, { "chapter": 12, "fullname": "但以理书", "shortname": "但" }, { "chapter": 14, "fullname": "何阿西书", "shortname": "何" }, { "chapter": 3, "fullname": "约珥书", "shortname": "珥" }, { "chapter": 9, "fullname": "阿摩司书", "shortname": "摩" }, { "chapter": 1, "fullname": "俄巴底亚书", "shortname": "俄" }, { "chapter": 4, "fullname": "约拿书", "shortname": "拿" }, { "chapter": 7, "fullname": "弥迦书", "shortname": "弥" }, { "chapter": 3, "fullname": "那鸿书", "shortname": "鸿" }, { "chapter": 3, "fullname": "哈巴谷书", "shortname": "哈" }, { "chapter": 3, "fullname": "西番雅书", "shortname": "番" }, { "chapter": 2, "fullname": "哈该书", "shortname": "该" }, { "chapter": 14, "fullname": "撒迦利亚书", "shortname": "亚" }, { "chapter": 4, "fullname": "玛拉基书", "shortname": "玛" }],new_bible_cata:[{ "chapter": 28, "fullname": "马太福音", "shortname": "太" }, { "chapter": 16, "fullname": "马可福音", "shortname": "可" }, { "chapter": 24, "fullname": "路加福音", "shortname": "路" }, { "chapter": 21, "fullname": "约翰福音", "shortname": "约" }, { "chapter": 28, "fullname": "使徒行传", "shortname": "徒" }, { "chapter": 18, "fullname": "罗马书", "shortname": "罗" }, { "chapter": 16, "fullname": "哥林多前书", "shortname": "林前" }, { "chapter": 13, "fullname": "哥林多后书", "shortname": "林后" }, { "chapter": 6, "fullname": "加拉太书", "shortname": "加" }, { "chapter": 6, "fullname": "以弗所书", "shortname": "弗" }, { "chapter": 4, "fullname": "腓力比书", "shortname": "腓" }, { "chapter": 4, "fullname": "歌罗西书", "shortname": "西" }, { "chapter": 5, "fullname": "帖撒罗尼迦前书", "shortname": "帖前" }, { "chapter": 3, "fullname": "帖撒罗尼迦后书", "shortname": "帖后" }, { "chapter": 6, "fullname": "提摩太前书", "shortname": "提前" }, { "chapter": 4, "fullname": "提摩太后书", "shortname": "提后" }, { "chapter": 3, "fullname": "提多书", "shortname": "多" }, { "chapter": 1, "fullname": "腓利门书", "shortname": "门" }, { "chapter": 13, "fullname": "希伯来书", "shortname": "来" }, { "chapter": 5, "fullname": "雅各书", "shortname": "雅" }, { "chapter": 5, "fullname": "彼得前书", "shortname": "彼前" }, { "chapter": 3, "fullname": "彼得后书", "shortname": "彼后" }, { "chapter": 5, "fullname": "约翰一书", "shortname": "约一" }, { "chapter": 1, "fullname": "约翰二书", "shortname": "约二" }, { "chapter": 1, "fullname": "约翰三书", "shortname": "约三" }, { "chapter": 1, "fullname": "犹大书", "shortname": "犹" }, { "chapter": 22, "fullname": "启示录", "shortname": "启" }]
+module.exports = {
+  old_bible_cata: [{
+    "chapter": 50,
+    "fullname": "创世记",
+    "shortname": "创"
+  }, {
+    "chapter": 40,
+    "fullname": "出埃及记",
+    "shortname": "出"
+  }, {
+    "chapter": 27,
+    "fullname": "利未记",
+    "shortname": "利"
+  }, {
+    "chapter": 36,
+    "fullname": "民数记",
+    "shortname": "民"
+  }, {
+    "chapter": 34,
+    "fullname": "申命记",
+    "shortname": "申"
+  }, {
+    "chapter": 24,
+    "fullname": "约书亚记",
+    "shortname": "书"
+  }, {
+    "chapter": 21,
+    "fullname": "士师记",
+    "shortname": "士"
+  }, {
+    "chapter": 4,
+    "fullname": "路得记",
+    "shortname": "得"
+  }, {
+    "chapter": 31,
+    "fullname": "撒母耳记上",
+    "shortname": "撒上"
+  }, {
+    "chapter": 24,
+    "fullname": "撒母耳记下",
+    "shortname": "撒下"
+  }, {
+    "chapter": 22,
+    "fullname": "列王纪上",
+    "shortname": "王上"
+  }, {
+    "chapter": 25,
+    "fullname": "列王记下",
+    "shortname": "王下"
+  }, {
+    "chapter": 29,
+    "fullname": "历代志上",
+    "shortname": "代上"
+  }, {
+    "chapter": 36,
+    "fullname": "历代志下",
+    "shortname": "代下"
+  }, {
+    "chapter": 10,
+    "fullname": "以斯拉记",
+    "shortname": "拉"
+  }, {
+    "chapter": 13,
+    "fullname": "尼希米记",
+    "shortname": "尼"
+  }, {
+    "chapter": 10,
+    "fullname": "以斯帖记",
+    "shortname": "斯"
+  }, {
+    "chapter": 42,
+    "fullname": "约伯记",
+    "shortname": "伯"
+  }, {
+    "chapter": 150,
+    "fullname": "诗篇",
+    "shortname": "诗"
+  }, {
+    "chapter": 31,
+    "fullname": "箴言",
+    "shortname": "箴"
+  }, {
+    "chapter": 12,
+    "fullname": "传道书",
+    "shortname": "传"
+  }, {
+    "chapter": 8,
+    "fullname": "雅歌",
+    "shortname": "歌"
+  }, {
+    "chapter": 66,
+    "fullname": "以赛亚书",
+    "shortname": "赛"
+  }, {
+    "chapter": 52,
+    "fullname": "耶利米书",
+    "shortname": "耶"
+  }, {
+    "chapter": 5,
+    "fullname": "耶利米哀歌",
+    "shortname": "哀"
+  }, {
+    "chapter": 48,
+    "fullname": "以西结书",
+    "shortname": "结"
+  }, {
+    "chapter": 12,
+    "fullname": "但以理书",
+    "shortname": "但"
+  }, {
+    "chapter": 14,
+    "fullname": "何阿西书",
+    "shortname": "何"
+  }, {
+    "chapter": 3,
+    "fullname": "约珥书",
+    "shortname": "珥"
+  }, {
+    "chapter": 9,
+    "fullname": "阿摩司书",
+    "shortname": "摩"
+  }, {
+    "chapter": 1,
+    "fullname": "俄巴底亚书",
+    "shortname": "俄"
+  }, {
+    "chapter": 4,
+    "fullname": "约拿书",
+    "shortname": "拿"
+  }, {
+    "chapter": 7,
+    "fullname": "弥迦书",
+    "shortname": "弥"
+  }, {
+    "chapter": 3,
+    "fullname": "那鸿书",
+    "shortname": "鸿"
+  }, {
+    "chapter": 3,
+    "fullname": "哈巴谷书",
+    "shortname": "哈"
+  }, {
+    "chapter": 3,
+    "fullname": "西番雅书",
+    "shortname": "番"
+  }, {
+    "chapter": 2,
+    "fullname": "哈该书",
+    "shortname": "该"
+  }, {
+    "chapter": 14,
+    "fullname": "撒迦利亚书",
+    "shortname": "亚"
+  }, {
+    "chapter": 4,
+    "fullname": "玛拉基书",
+    "shortname": "玛"
+  }],
+  new_bible_cata: [{
+    "chapter": 28,
+    "fullname": "马太福音",
+    "shortname": "太"
+  }, {
+    "chapter": 16,
+    "fullname": "马可福音",
+    "shortname": "可"
+  }, {
+    "chapter": 24,
+    "fullname": "路加福音",
+    "shortname": "路"
+  }, {
+    "chapter": 21,
+    "fullname": "约翰福音",
+    "shortname": "约"
+  }, {
+    "chapter": 28,
+    "fullname": "使徒行传",
+    "shortname": "徒"
+  }, {
+    "chapter": 18,
+    "fullname": "罗马书",
+    "shortname": "罗"
+  }, {
+    "chapter": 16,
+    "fullname": "哥林多前书",
+    "shortname": "林前"
+  }, {
+    "chapter": 13,
+    "fullname": "哥林多后书",
+    "shortname": "林后"
+  }, {
+    "chapter": 6,
+    "fullname": "加拉太书",
+    "shortname": "加"
+  }, {
+    "chapter": 6,
+    "fullname": "以弗所书",
+    "shortname": "弗"
+  }, {
+    "chapter": 4,
+    "fullname": "腓力比书",
+    "shortname": "腓"
+  }, {
+    "chapter": 4,
+    "fullname": "歌罗西书",
+    "shortname": "西"
+  }, {
+    "chapter": 5,
+    "fullname": "帖撒罗尼迦前书",
+    "shortname": "帖前"
+  }, {
+    "chapter": 3,
+    "fullname": "帖撒罗尼迦后书",
+    "shortname": "帖后"
+  }, {
+    "chapter": 6,
+    "fullname": "提摩太前书",
+    "shortname": "提前"
+  }, {
+    "chapter": 4,
+    "fullname": "提摩太后书",
+    "shortname": "提后"
+  }, {
+    "chapter": 3,
+    "fullname": "提多书",
+    "shortname": "多"
+  }, {
+    "chapter": 1,
+    "fullname": "腓利门书",
+    "shortname": "门"
+  }, {
+    "chapter": 13,
+    "fullname": "希伯来书",
+    "shortname": "来"
+  }, {
+    "chapter": 5,
+    "fullname": "雅各书",
+    "shortname": "雅"
+  }, {
+    "chapter": 5,
+    "fullname": "彼得前书",
+    "shortname": "彼前"
+  }, {
+    "chapter": 3,
+    "fullname": "彼得后书",
+    "shortname": "彼后"
+  }, {
+    "chapter": 5,
+    "fullname": "约翰一书",
+    "shortname": "约一"
+  }, {
+    "chapter": 1,
+    "fullname": "约翰二书",
+    "shortname": "约二"
+  }, {
+    "chapter": 1,
+    "fullname": "约翰三书",
+    "shortname": "约三"
+  }, {
+    "chapter": 1,
+    "fullname": "犹大书",
+    "shortname": "犹"
+  }, {
+    "chapter": 22,
+    "fullname": "启示录",
+    "shortname": "启"
+  }],
+  chapter_list: [
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+    [1, 2, 3, 4],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    [1, 2, 3, 4, 5, 6, 7, 8],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+    [1, 2, 3],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    [1],
+    [1, 2, 3, 4],
+    [1, 2, 3, 4, 5, 6, 7],
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+    [1, 2, 3, 4],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    [1, 2, 3, 4, 5, 6],
+    [1, 2, 3, 4, 5, 6],
+    [1, 2, 3, 4],
+    [1, 2, 3, 4],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3],
+    [1, 2, 3, 4, 5, 6],
+    [1, 2, 3, 4],
+    [1, 2, 3],
+    [1],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3],
+    [1, 2, 3, 4, 5],
+    [1],
+    [1],
+    [1],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+  ]
 }
