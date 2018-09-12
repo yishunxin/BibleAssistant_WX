@@ -1,4 +1,5 @@
 const host = "http://127.0.0.1:5000"
+const apiVersion = "api001"
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -17,7 +18,7 @@ const formatNumber = n => {
 
 function httpGet(sub_url, params) {
   wx.request({
-    url: host + sub_url,
+    url: host + '/' + apiVersion + sub_url,
     data: params,
     method: 'GET',
     header: {
@@ -33,8 +34,26 @@ function httpGet(sub_url, params) {
     }
   })
 }
-
+function httpPost(sub_url, params) {
+  wx.request({
+    url: host + '/' + apiVersion + sub_url,
+    data: params,
+    method: 'POST',
+    header: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    success: function (res) {
+      console.log("sucess", res)
+      return res
+    },
+    fail: function (res) {
+      console.log("fail", res)
+      return res
+    }
+  })
+}
 module.exports = {
   formatTime: formatTime,
-  httpGet: httpGet
+  httpGet: httpGet,
+  httpPost:httpPost
 }

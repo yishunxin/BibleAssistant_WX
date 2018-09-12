@@ -1,4 +1,5 @@
 //app.js
+import uitl from '/utils/util.js'
 App({
   onLaunch: function() {
     // 展示本地存储能力
@@ -9,19 +10,9 @@ App({
     wx.login({
       success: res => {
         console.log(res)
-        return
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        wx.request({
-          url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wx463cdde9d4eabd0f&secret=e03adf3f3e1a772e58a349943412ca9d&js_code=' +res.code + '&grant_type=authorization_code',
-          data: {},
-          header: {
-            'content-type': 'application/json'
-          },
-          success: function(res) {
-            console.log(res)
-            var openid = res.data.openid //返回openid
-          }
-        })
+        res = uitl.httpPost('/login',{code:res.code})
+        console.log(res)
       }
     })
     // 获取用户信息
@@ -46,6 +37,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    openid:''
   }
 })
