@@ -1,11 +1,13 @@
 // pages/main/main.js
 import staticData from '../../data/staticData.js'
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    today_chapters:0,
     today_punchs: [],
     startIndex: [0, 0],
     volumesStart: [
@@ -47,8 +49,9 @@ Page({
     }
   },
   saveRecord: function() {
-    var start = this.getData('startIndex')
-    var end = this.getData('endIndex')
+    var that =this
+    var start = this.data.startIndex
+    var end = this.data.endIndex
     if (start[0] > end[0]) {
       wx.showToast({
         title: '成功',
@@ -57,7 +60,7 @@ Page({
       })
       return
     }
-    if (start[0] = end[0] && start[1] > end[1]) {
+    else if (start[0] = end[0] && start[1] > end[1]) {
       wx.showToast({
         title: '成功',
         icon: 'success',
@@ -65,13 +68,27 @@ Page({
       })
       return
     }
+    else{
+      app.send('/record/save', {"content": start.concat(end)},"POST").then(function(data){
+        that.todayStatic()
+      })
+    }
     
   },
   /**
    * 生命周期函数--监听页面加载
    */
+  todayStatic:function(){
+    var that = this
+    app.send('/record/today').then(function(data){
+      that.setData({
+        'today_punchs':data.records,
+        'today_chapters':data.chapters
+      })
+    })
+  },
   onLoad: function(options) {
-
+    this.todayStatic()
   },
 
   /**

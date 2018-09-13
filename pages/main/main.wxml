@@ -4,7 +4,7 @@
     你今天读经了吗？
   </view>
   <view class='body'>
-    <view>
+    <view class='top'>
       <view class="multi_selector">
         <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{startIndex}}" range="{{volumesStart}}" class='mypicker'>
           <view class="picker">
@@ -20,11 +20,19 @@
           </view>
         </picker>
       </view>
+      <button size='mini' bindtap='saveRecord'>现在打卡</button>
     </view>
-    <button size='mini' bindtap=''>现在打卡</button>
     <view class='down'>
       <label>今日打卡</label>
-      <label>共0章</label>
+      <label>共{{today_chapters}}章</label>
+      <view wx:if="{{today_punchs.length != 0}}">
+        <view wx:for="{{today_punchs}}" class='today_list'>
+          <label>{{item.content_ch[0]}}:{{item.content_ch[1]}}-{{item.content_ch[2]}}:{{item.content_ch[3]}}</label>
+        </view>
+      </view>
+      <view wx:else>
+        <label>今天你还没有打卡哦！</label>
+      </view>
     </view>
   </view>
 </view>

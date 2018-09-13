@@ -1,16 +1,19 @@
 /* pages/main/main.wxss */
-
+.header{
+  height:25px;
+}
 .body {
   display: flex;
   flex-direction: column;
 }
 
 .down {
-  border-top: solid, gray;
+  border-top: solid 1px gray;
+  margin: 10px;
+  padding: 7px;
 }
 
 .multi_selector {
-  display: flex;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
@@ -31,4 +34,7 @@
 
 .t1 {
   margin-right: 10px;
+}
+
+.today_list {
 }

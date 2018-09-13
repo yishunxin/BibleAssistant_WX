@@ -16,42 +16,7 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
-function httpGet(sub_url, params) {
-  wx.request({
-    url: host + '/' + apiVersion + sub_url,
-    data: params,
-    method: 'GET',
-    header: {
-      'Content-Type': 'application/json'
-    },
-    success: function(res) {
-      console.log("sucess", res)
-      return res
-    },
-    fail: function(res) {
-      console.log("fail", res)
-      return res
-    }
-  })
-}
-function httpPost(sub_url, params) {
-  wx.request({
-    url: host + '/' + apiVersion + sub_url,
-    data: params,
-    method: 'POST',
-    header: {
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-    success: function (res) {
-      console.log("sucess", res)
-      return res
-    },
-    fail: function (res) {
-      console.log("fail", res)
-      return res
-    }
-  })
-}
+
 module.exports = {
   formatTime: formatTime,
   httpGet: httpGet,
