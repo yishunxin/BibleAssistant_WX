@@ -1,2 +1,23 @@
 <!--pages/rank/rank.wxml-->
-<text>pages/rank/rank.wxml</text>
+<view class='main'>
+  <view class='top'>
+    <view class='userinfo_left'>
+      <label>累计打卡：<label>{{totalDays}}</label> 天</label>
+      <label>累计读经：<label>{{totalChapters}}</label> 章</label>
+      <label>小组排名：第 <label>{{myGroupRank}}</label> 名</label>
+      <label>总排名：第 <label>{{myRank}}</label> 名</label>
+    </view>
+    <view class="userinfo_right">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  </view>
+  <view class='middle'>
+  <label>小组排名</label>
+  <scroll-view></scroll-view>
+  <scroll-view></scroll-view>
+  </view>
+</view>

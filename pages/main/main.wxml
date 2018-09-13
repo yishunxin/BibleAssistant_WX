@@ -20,18 +20,32 @@
           </view>
         </picker>
       </view>
-      <button size='mini' bindtap='saveRecord'>现在打卡</button>
+      <view class='flex-center'>
+        <button size='mini' bindtap='saveRecord' style='padding-ringt:0'>现在打卡</button>
+      </view>
     </view>
     <view class='down'>
-      <label>今日打卡</label>
-      <label>共{{today_chapters}}章</label>
-      <view wx:if="{{today_punchs.length != 0}}">
+      <label style='margin-right:20rpx'>今日打卡</label>
+      <label style='letter-spacing:5rpx'>共
+        <label style='color:blue'>{{today_chapters}}</label>章</label>
+      <scroll-view wx:if="{{today_punchs.length != 0}}" class='list_wrapper' scroll-y='true'>
         <view wx:for="{{today_punchs}}" class='today_list'>
-          <label>{{item.content_ch[0]}}:{{item.content_ch[1]}}-{{item.content_ch[2]}}:{{item.content_ch[3]}}</label>
+          <view>
+            <label style='color:gray;text-align:center;vertical-align:middle;margin-right:25rpx'>{{item.time}}</label>
+            <label>{{item.content_ch[0]}}：{{item.content_ch[1]}} — {{item.content_ch[2]}}：{{item.content_ch[3]}}</label>
+          </view>
+          <view>
+            <button data-rid='{{item.rid}}' bindtap='deleteRecord' class='inline_btn' style="ringt:0">删除</button>
+          </view>
+        </view>
+      </scroll-view>
+      <view wx:else class='list_wrapper'>
+        <view class='flex-center' style='height:100%;justify-content: center;align-items: center;color:gray'>
+          <label>今天你还没有打卡哦！</label>
         </view>
       </view>
-      <view wx:else>
-        <label>今天你还没有打卡哦！</label>
+      <view class='history'>
+        <navigator url="" open-type="switchTab" hover-class="other-navigator-hover" class='h_nav'>历史记录></navigator>
       </view>
     </view>
   </view>

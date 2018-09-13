@@ -18,6 +18,12 @@ Page({
     ],
     endIndex: [0, 0],
   },
+  deleteRecord:function(e){
+    var that = this
+    app.send('/record/delete',{rid:e.target.dataset.rid}).then(function(data){
+      that.todayStatic()
+    })
+  },
   bindMultiPickerChange: function(e) {
     this.setData({
       "startIndex[0]": e.detail.value[0],
@@ -60,7 +66,7 @@ Page({
       })
       return
     }
-    else if (start[0] = end[0] && start[1] > end[1]) {
+    else if (start[0] == end[0] && start[1] > end[1]) {
       wx.showToast({
         title: '成功',
         icon: 'success',

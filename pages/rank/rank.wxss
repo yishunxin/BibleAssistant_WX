@@ -1,1 +1,37 @@
 /* pages/rank/rank.wxss */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 21px 0 21px;
+  height: 250rpx;
+  border-bottom: solid 1rpx rgb(209, 208, 208);
+}
+
+.userinfo_left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-self: center;
+}
+
+.userinfo_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.userinfo_left label label {
+  color: blue;
+}
