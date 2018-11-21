@@ -1,2 +1,2 @@
 <!--pages/group/group.wxml-->
-<text>pages/group/group.wxml</text>
+<text class='iconfont icon-link' style='color:red'>pages/group/group.wxml</text>

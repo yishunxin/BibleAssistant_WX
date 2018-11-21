@@ -1,13 +1,5 @@
 /**app.wxss**/
-
-@font-face {
-  font-family: 'iconfont'; /* project id 813112 */
-  src: url('//at.alicdn.com/t/font_813112_ejnlmg1mw38.eot');
-  src: url('//at.alicdn.com/t/font_813112_ejnlmg1mw38.eot?#iefix') format('embedded-opentype'),
-         url('//at.alicdn.com/t/font_813112_ejnlmg1mw38.woff') format('woff'),
-         url('//at.alicdn.com/t/font_813112_ejnlmg1mw38.ttf') format('truetype'),
-         url('//at.alicdn.com/t/font_813112_ejnlmg1mw38.svg#iconfont') format('svg');
-}
+@import "iconfont.wxss";
 
 .container {
   height: 100%;
@@ -17,19 +9,6 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-}
-
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2rpx;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-arrow:before {
-  content: "\e6a8";
 }
 
 page {
